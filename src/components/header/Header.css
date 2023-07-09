@@ -1,0 +1,43 @@
+.header {
+    margin: 0 2.5rem;
+    padding: .5rem 0;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+}
+
+.headerLeft, .headerRight {
+    display: flex;
+    align-items: center;
+
+}
+
+a > span{
+    margin: 0 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+}
+
+.logout-btn{
+    margin: 0 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: red;
+    background-color: black;
+    border: none;
+}
+
+a > span:hover {
+    color: red;
+}
+
+.header__icon {
+    width: 60px;
+    cursor: pointer;
+}
+
+.user__avatar {
+    font-size: 2rem;
+}
+
