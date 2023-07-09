@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="headerLeft">
-                <Link to="/home"><img className="header__icon" src="https://icon-library.com/images/movie-icon-png/movie-icon-png-2.jpg" /></Link>
+                <img className="header__icon" src="https://icon-library.com/images/movie-icon-png/movie-icon-png-2.jpg" />
                 <Link to="/movies/popular" style={{textDecoration: "none"}}><span>Popular</span></Link>
                 <Link to="/movies/top_rated" style={{textDecoration: "none"}}><span>Top Rated</span></Link>
                 <Link to="/movies/upcoming" style={{textDecoration: "none"}}><span>Upcoming</span></Link>

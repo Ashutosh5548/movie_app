@@ -6,9 +6,13 @@
     justify-content:space-between;
 }
 
-.headerLeft, .headerRight {
+.headerLeft{
     display: flex;
-    align-items: center;
+    width: 50%;
+} 
+.headerRight {
+    display: flex;
+    /* align-items: center; */
 }
 
 .log-btn,.sign-btn{
@@ -26,6 +30,7 @@
 
 .landing-heading{
     color: red;
+    margin-left: 5%;
 }
 
 

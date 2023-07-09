@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Header from './components/header/Header';
-import Home from './pages/home/home';
 import MovieList from './components/movieList/movieList';
 import Movie from './pages/movieDetail/movie';
 import Landing from './pages/landing/landing';
@@ -21,7 +20,6 @@ function App() {
                 <Route index element={<div><Navbar /><Landing /></div>}></Route>
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/signup" element={<Signup />}></Route>
-                <Route path="/home" element={<div><Header /><Home /></div>}></Route>
                 <Route path="/movie/:id" element={<div><Header /><Movie /></div>}></Route>
                 <Route path="/movies/:type" element={<div><Header /><MovieList /></div>}></Route>
                 <Route path="/*" element={<h1>Error Page</h1>}></Route>
