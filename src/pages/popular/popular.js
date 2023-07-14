@@ -1,36 +1,27 @@
 import React, {useEffect, useState} from "react"
-import "./movieList.css"
-import { useParams } from "react-router-dom"
-import Cards from "../card/card"
+import "../../components/movieList/movieList.css"
+import Cards from "../../components/card/card"
 import HashLoader from "react-spinners/HashLoader";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase";
+import Header from "../../components/header/Header";
 
-const MovieList = () => {
+const Popular = () => {
 
     const [loading,setLoading] = useState(true);
     const [movieList, setMovieList] = useState([])
-    const {type} = useParams()
     
 
     useEffect(() => {
-        getData()
+        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US`)
+        .then(res => res.json())
+        .then(data => setMovieList(data.results))
         setTimeout(()=>{
             setLoading(false);
         },1500)
-    }, [type])
-
-    const getData = () => {
-        fetch(`https://api.themoviedb.org/3/movie/${type ? type : ""}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US`)
-        .then(res => res.json())
-        .then(data => setMovieList(data.results))
-        
-        // setTimeout(()=>{
-        //     setLoading(false);
-        // },1500)
-    }
+    }, [])
 
     const [userName, setUserName] = useState("");
 
@@ -45,7 +36,7 @@ const MovieList = () => {
 
     return (
         <div>
-            <h2 className="display-name">Welcome {userName}</h2>
+            
             {    loading?
             <div className="loading">
                 <HashLoader
@@ -58,7 +49,12 @@ const MovieList = () => {
             </div>
             :
             <>
-            <div className="poster">
+            <Header />
+            <div style={{"display":"flex"}}>
+                <h2 className="display-name">Welcome {userName}</h2>
+                <h2 className="list__title">POPULAR</h2>
+            </div>
+            <div style={{"marginBottom":"2%"}} className="poster">
                 <Carousel
                     showThumbs={false}
                     autoPlay={true}
@@ -90,7 +86,7 @@ const MovieList = () => {
             </div>
         
             <div className="movie__list">
-                <h2 className="list__title">{(type ? type : "").toUpperCase()}</h2>
+                
                 <div className="list__cards">
                     {
                         movieList.map(movie => (
@@ -106,4 +102,4 @@ const MovieList = () => {
     )
 }
 
-export default MovieList
+export default Popular
