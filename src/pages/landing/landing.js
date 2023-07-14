@@ -9,7 +9,7 @@ function Landing() {
         <div className="paddings innerwidth flexcentre land-container ">
             <div className=" land-left">
               <div className="land-title">
-                <h1>Welcome ,<br/> To Movie App</h1>
+                <h1>Welcome ,<br/> To Movie Finder</h1>
                 <div className="flexcolstart land-des">
                   <p className='about'>Dive into a vast collection of movies from various genres, including action, drama, 
                     comedy, thriller, and more.With our user-friendly interface and powerful search functionality, you can 
