@@ -9,23 +9,27 @@ import { Link } from "react-router-dom";
 import { auth } from "../../firebase";
 
 const MovieList = () => {
-    
+
+    const [loading,setLoading] = useState(true);
     const [movieList, setMovieList] = useState([])
     const {type} = useParams()
-    const [loading,setLoading] = useState(true);
+    
 
     useEffect(() => {
         getData()
+        setTimeout(()=>{
+            setLoading(false);
+        },1500)
     }, [type])
 
     const getData = () => {
         fetch(`https://api.themoviedb.org/3/movie/${type ? type : ""}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US`)
         .then(res => res.json())
         .then(data => setMovieList(data.results))
-        setTimeout(()=>{
-            setLoading(false);
-        },1500)
         
+        // setTimeout(()=>{
+        //     setLoading(false);
+        // },1500)
     }
 
     const [userName, setUserName] = useState("");
@@ -42,6 +46,18 @@ const MovieList = () => {
     return (
         <div>
             <h2 className="display-name">Welcome {userName}</h2>
+            {    loading?
+            <div className="loading">
+                <HashLoader
+                color={'#F37A24'}
+                loading={loading}
+                size={100}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+                />
+            </div>
+            :
+            <>
             <div className="poster">
                 <Carousel
                     showThumbs={false}
@@ -72,17 +88,7 @@ const MovieList = () => {
                     }
                 </Carousel>
             </div>
-        {    loading?
-            <div className="loading">
-                <HashLoader
-                color={'#F37A24'}
-                loading={loading}
-                size={100}
-                aria-label="Loading Spinner"
-                data-testid="loader"
-                />
-            </div>
-            :
+        
             <div className="movie__list">
                 <h2 className="list__title">{(type ? type : "").toUpperCase()}</h2>
                 <div className="list__cards">
@@ -93,6 +99,7 @@ const MovieList = () => {
                     }
                 </div>
             </div>
+            </>
         }    
         </div>
         

@@ -6,6 +6,7 @@ import InputControl from "../../components/InputControl/InputControls";
 import { auth } from "../../firebase";
 
 import styles from "./Login.module.css";
+import PassControl from "../../components/InputControl/PassControl";
 
 function Login() {
   const navigate = useNavigate();
@@ -47,7 +48,7 @@ function Login() {
           }
           placeholder="Enter email address"
         />
-        <InputControl
+        <PassControl
           label="Password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))
