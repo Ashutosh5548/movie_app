@@ -77,7 +77,7 @@ const Toprated = () => {
                                             <i className="fas fa-star" />{" "}
                                         </span>
                                     </div>
-                                    <div className="posterImage__description">{movie ? movie.overview : ""}</div>
+                                    {/* <div className="posterImage__description">{movie ? movie.overview : ""}</div> */}
                                 </div>
                             </Link>
                         ))
