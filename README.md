@@ -1,6 +1,6 @@
-# MovieFinder - A Movie Searching App
+# Movie Finder - A Movie Searching App
 
-MovieFinder is a dynamic movie searching app that keeps you updated with the trending, top rated and up coming movies. You can just click on any of these movies and know some more about it on the details page of that movie.
+Movie Finder is a dynamic movie searching app that keeps you updated with the trending, top rated and upcoming movies. You can just click on any of these movies and know some more about it on the details page of that movie.
 
 # [Website](https://findmovieweb.netlify.app/)
 
@@ -8,14 +8,14 @@ MovieFinder is a dynamic movie searching app that keeps you updated with the tre
 # Features
 
 + Login/Sign up with Email and Password
-+ Up-to-Date trending, top rated and up coming movies
++ Up-to-Date trending, top rated and upcoming movies
 + Movie details availability
 
 # Tech Stack
 
 + Frontend: React.js
 + Backend: Firebase
-+ External API Used: TMDB API
++ API Used: TMDB API
 
 # Screenshots
 
@@ -26,4 +26,4 @@ MovieFinder is a dynamic movie searching app that keeps you updated with the tre
 To get started with MovieFinder, follow these steps:
 1. Clone the repository
 2. Install the dependencies: run npm install in terminal
-4. Run the app: run npm start
+4. Run the app: run npm start in the terminal
