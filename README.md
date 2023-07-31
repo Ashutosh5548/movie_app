@@ -2,9 +2,7 @@
 
 MovieFinder is a dynamic movie searching app that keeps you updated with the trending, top rated and up coming movies. You can just click on any of these movies and know some more about it on the details page of that movie.
 
-<!-- # [Website](https://findmovieweb.netlify.app/) -->
-# Website
-[link](https://findmovieweb.netlify.app/)
+# [Website](https://findmovieweb.netlify.app/)
 
 
 # Features
