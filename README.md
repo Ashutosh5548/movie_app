@@ -16,7 +16,7 @@ MovieFinder is a dynamic movie searching app that keeps you updated with the tre
 
 # Screenshots
 
-![Image1](https://github.com/Ashutosh5548/movie_app/screenshots/movie0.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Image2](https://github.com/Ashutosh5548/movie_app/screenshots/movie1.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Image3](https://github.com/Ashutosh5548/movie_app/screenshots/movie2.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Image3](https://github.com/Ashutosh5548/movie_app/screenshots/movie3.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Image3](https://github.com/Ashutosh5548/movie_app/screenshots/login.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Image3](https://github.com/Ashutosh5548/movie_app/screenshots/login1.jpg)
+![Image1](https://github.com/Ashutosh5548/movie_app/blob/main/screenshots/movie0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Image2](https://github.com/Ashutosh5548/movie_app/blob/main/screenshots/movie1.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Image3](https://github.com/Ashutosh5548/movie_app/blob/main/screenshots/movie2.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Image3](https://github.com/Ashutosh5548/movie_app/blob/main/screenshots/movie3.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Image3](https://github.com/Ashutosh5548/movie_app/blob/main/screenshots/login.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Image3](https://github.com/Ashutosh5548/movie_app/blob/main/screenshots/login1.jpg)
 
 # Installation
 
